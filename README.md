@@ -11,6 +11,10 @@ A modern Python starter template for new projects and experiments. It includes u
 - `.venv`: The local virtual environment created by `uv sync`. Do not commit it to Git.
 - `uv.lock`: The dependency lock file that records exact package versions. Commit it to Git so development and CI use the same dependencies.
 
+## 📈 Future Roadmap
+
+- Placeholder for template
+
 ## 📂 Project Structure
 
 ```text
@@ -23,6 +27,7 @@ py-project-starter/
 │   ├── __init__.py         # Public package interface
 │   └── main.py             # Application entry point
 ├── tests/                  # Test suite
+├── docs/                   # Documentation
 ├── .env.example            # Environment variable template
 ├── .gitignore              # Git ignore rules
 ├── pyproject.toml          # Project and tool configuration
