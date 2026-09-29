@@ -37,9 +37,13 @@ py-project-starter/
 
 ## 🚀 Getting Started
 
-### 1. Install Requirements
+### Prerequisites
 
-You need Python 3.12 or later, Git, and [uv](https://docs.astral.sh/uv/).
+You need:
+
+- Python 3.12 or later
+- Git
+- [uv](https://docs.astral.sh/uv/)
 
 Install uv on Windows:
 
@@ -53,37 +57,42 @@ Install uv on Linux or macOS:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-### 2. Clone the Repository
+### Clone the Repository
 
 ```powershell
-git clone "https://github.com/henrysrtaylor/py-project-starter.git"
-cd py-project-starter
+git clone https://github.com/henrysrtaylor/algorithmic-chess-lab.git
+cd algorithmic-chess-lab
 ```
 
-### 3. Install Dependencies
+### Install Dependencies
 
-From the project root, create or update the local virtual environment and install dependencies:
+From the project root, create or update the local virtual environment and
+install the project dependencies:
 
 ```powershell
 uv sync
 ```
 
-### 4. Run Quality Checks
+## 🛠️ Development
 
-Run the linter and automatically apply safe fixes:
-
-```powershell
-uv run ruff check . --fix
-```
-
-Verify that the code is correctly formatted:
+Run the configured checks with:
 
 ```powershell
+uv run ruff check .
 uv run ruff format --check .
+uv run pytest
 ```
 
-Run the test suite and display coverage for any untested lines:
+## 🤝 Contributing
 
-```powershell
-uv run pytest --cov=project_name --cov-report=term-missing
-```
+Contributions are welcome! As the project is still in early development, please open an issue before starting substantial work so that proposed changes can be discussed and coordinated.
+
+To contribute:
+
+1. Fork the repository.
+2. Create a branch for your change.
+3. Install the development dependencies with `uv sync`.
+4. Run the linting and test checks.
+5. Submit a pull request describing your changes.
+
+Bug reports, feature suggestions, documentation improvements, and new agent ideas are all welcome.
