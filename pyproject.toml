@@ -12,6 +12,9 @@ dependencies = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.uv]
+link-mode = "copy"
+
 # Configured for your root `project_name` package
 [tool.hatch.build.targets.wheel]
 packages = ["project_name"]
