@@ -1,1 +1,1 @@
-"""Utility modules for the project."""
+"""Utility subpackage for the project."""

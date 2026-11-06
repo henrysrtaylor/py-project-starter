@@ -1,4 +1,4 @@
-"""Application entry point."""
+"""Module in project_name package."""
 
 from project_name.utils.name import add
 

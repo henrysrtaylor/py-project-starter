@@ -22,10 +22,12 @@ py-project-starter/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml          # Continuous integration workflow
-├── project_name/           # Application package
+├── project_name/           # Installable library package
 │   ├── utils/              # Reusable helper modules
 │   ├── __init__.py         # Public package interface
 │   └── main.py             # Application entry point
+├── scripts/                # Standalone scripts outside the library
+│   └── main.py             # Example script entry point
 ├── tests/                  # Test suite
 ├── docs/                   # Documentation
 ├── .env.example            # Environment variable template
@@ -71,6 +73,18 @@ install the project dependencies:
 
 ```powershell
 uv sync
+```
+
+### Run a Standalone Script
+
+The root-level `scripts/` folder contains standalone scripts, separate from the
+installable `project_name` package. Scripts can import the library after
+`uv sync`, but are not included in its wheel build.
+
+Run the example script from the project root:
+
+```powershell
+uv run python scripts/main.py
 ```
 
 ## 🛠️ Development

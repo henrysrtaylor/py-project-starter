@@ -1,4 +1,4 @@
-"""Reusable example functions for the project."""
+"""Reusable example functions in utils subpackage for the project."""
 
 
 def add(a: int, b: int) -> int:
